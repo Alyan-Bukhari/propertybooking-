@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Booking — Houses, Construction & Highrise Projects in Pakistan</title>
+  <meta name="description" content="Property Booking: buy ready houses (5 marla, 10 marla, 1 kanal), build with transparent construction quotations, and book highrise apartments on easy installments. Call 0303 0292114.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <img src="images/logo.svg" alt="Property Booking">
+  <span>Property Booking</span>
+  <div class="bar"><i></i></div>
+</div>
+
+<!-- ================= NAV ================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.svg" alt="Property Booking logo">
+      <span class="brand-name">Property Booking<small>Pakistan</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="houses.html">Houses</a>
+      <a href="construction.html">Construction</a>
+      <a href="highrise.html">Highrise</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="tel:+923030292114" class="nav-cta">📞 0303 0292114</a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-bg">
+    <img src="images/hero-home.jpg" alt="Luxury modern house at dusk">
+  </div>
+  <div class="container">
+    <span class="eyebrow hero-fade">Houses · Construction · Highrise</span>
+    <h1 class="hero-title">
+      <span class="h-line"><span>Find the home</span></span>
+      <span class="h-line"><span><em>you were meant</em></span></span>
+      <span class="h-line"><span>to own.</span></span>
+    </h1>
+    <p class="hero-sub hero-fade f2">Ready houses, transparent construction, and highrise apartments on easy plans — one trusted team from booking to possession.</p>
+
+    <div class="search-card hero-fade f3">
+      <div class="search-tabs">
+        <button class="active" data-mode="houses">Houses</button>
+        <button data-mode="construction">Construction</button>
+        <button data-mode="highrise">Highrise</button>
+      </div>
+      <div class="search-body">
+        <select id="search-size" aria-label="Property size">
+          <option value="any">Any size</option>
+          <option value="5 Marla">5 Marla</option>
+          <option value="10 Marla">10 Marla</option>
+          <option value="1 Kanal">1 Kanal</option>
+        </select>
+        <select id="search-area" aria-label="Area">
+          <option value="any">All areas</option>
+          <option>DHA Lahore</option>
+          <option>Bahria Town</option>
+          <option>Gulberg</option>
+          <option>Johar Town</option>
+        </select>
+        <button class="btn btn-gold" id="search-go">Search</button>
+      </div>
+    </div>
+
+    <div class="hero-stats hero-fade f3">
+      <div><b data-count="120" data-suffix="+">0</b><span>Homes delivered</span></div>
+      <div><b data-count="850" data-suffix="K">0</b><span>Sq ft constructed</span></div>
+      <div><b data-count="8" data-suffix="+">0</b><span>Years of trust</span></div>
+      <div><b data-count="98" data-suffix="%">0</b><span>Client satisfaction</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><i></i></div>
+</header>
+
+<!-- ================= TICKER ================= -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee">
+    <span>DHA Lahore</span><span>Bahria Town</span><span>Gulberg</span><span>Johar Town</span><span>5 Marla Homes</span><span>10 Marla Homes</span><span>1 Kanal Homes</span><span>Grey Structure</span><span>Turnkey Construction</span><span>Highrise Apartments</span>
+    <span>DHA Lahore</span><span>Bahria Town</span><span>Gulberg</span><span>Johar Town</span><span>5 Marla Homes</span><span>10 Marla Homes</span><span>1 Kanal Homes</span><span>Grey Structure</span><span>Turnkey Construction</span><span>Highrise Apartments</span>
+  </div>
+</div>
+
+<!-- ================= FEATURED HOUSES ================= -->
+<section class="section has-bg-word">
+  <span class="bg-word">HOMES</span>
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Featured listings</span>
+      <h2>Handpicked houses, ready to move in</h2>
+      <p class="lead">Verified properties across Lahore's finest neighbourhoods — transparent pricing, complete documentation.</p>
+    </div>
+    <div class="grid grid-3" id="featured-grid" style="margin-top:48px"></div>
+    <div class="center reveal" style="margin-top:44px">
+      <a href="houses.html" class="btn btn-teal">View all houses →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS BAND ================= -->
+<section class="section-tight">
+  <div class="container">
+    <div class="stats-band reveal">
+      <div><b data-count="120" data-suffix="+">0</b><span>Families housed</span></div>
+      <div><b data-count="45" data-suffix="+">0</b><span>Projects completed</span></div>
+      <div><b data-count="2" data-suffix="">0</b><span>Signature towers</span></div>
+      <div><b data-count="15" data-suffix="+">0</b><span>Partner developers</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POPULAR AREAS ================= -->
+<section class="section">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Where we operate</span>
+      <h2>Popular areas</h2>
+      <p class="lead">Explore the neighbourhoods we know street by street.</p>
+    </div>
+    <div class="grid grid-4" id="areas-grid" style="margin-top:48px"></div>
+  </div>
+</section>
+
+<!-- ================= CONSTRUCTION TEASER ================= -->
+<section class="section" style="background:var(--white)">
+  <div class="container split">
+    <div class="img-frame reveal reveal-left">
+      <img src="images/construction-site.jpg" alt="House under construction">
+    </div>
+    <div class="reveal reveal-right">
+      <span class="eyebrow">Construction services</span>
+      <h2>Build on your plot — with the quotation fixed before we begin.</h2>
+      <p>No hidden costs, no material swaps. Branded materials, weekly photo updates, and handover on the date we promise.</p>
+      <ul class="check-list">
+        <li>Grey structure & full turnkey packages</li>
+        <li>5 marla to 2 kanal — architect-designed</li>
+        <li>Live cost estimator — see your price in seconds</li>
+      </ul>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a href="construction.html" class="btn btn-gold">Try the cost estimator</a>
+        <a href="construction.html#quotations" class="btn btn-outline">Sample quotations</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HIGHRISE TEASER ================= -->
+<section class="section">
+  <div class="container split">
+    <div class="reveal reveal-left">
+      <span class="eyebrow">Highrise projects</span>
+      <h2>Apartments & penthouses on easy installments.</h2>
+      <p>Signature towers in prime locations — booking from 20% down, with possession-linked plans and complete legal documentation.</p>
+      <ul class="check-list">
+        <li>1, 2 & 3-bed apartments from PKR 1.15 Cr</li>
+        <li>Transparent payment plans — no surprises</li>
+        <li>Rooftop amenities, secure parking, smart access</li>
+      </ul>
+      <a href="highrise.html" class="btn btn-teal">Explore projects →</a>
+    </div>
+    <div class="img-frame reveal reveal-right">
+      <img src="images/tower-1.jpg" alt="Modern highrise residential tower">
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section" style="background:var(--teal-soft)">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Simple by design</span>
+      <h2>Booking in three steps</h2>
+    </div>
+    <div class="grid grid-3" style="margin-top:48px">
+      <div class="step-card reveal d1">
+        <div class="step-num">1</div>
+        <h3>Browse & visit</h3>
+        <p>Shortlist houses, projects, or a construction package. We arrange visits at your convenience — evenings and weekends included.</p>
+      </div>
+      <div class="step-card reveal d2">
+        <div class="step-num">2</div>
+        <h3>Book transparently</h3>
+        <p>One clear price, one written agreement. Token, payment plan, and documentation handled by our team.</p>
+      </div>
+      <div class="step-card reveal d3">
+        <div class="step-num">3</div>
+        <h3>Own with confidence</h3>
+        <p>Registry, possession, and after-handover support. We stay on call long after you get the keys.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section has-bg-word">
+  <span class="bg-word">TRUST</span>
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Client stories</span>
+      <h2>Trusted by families across the city</h2>
+    </div>
+    <div class="grid grid-3" id="testi-grid" style="margin-top:48px"></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Your next home is one call away.</h2>
+      <p>Talk to our team today — no obligation, just honest advice on what's actually worth buying right now.</p>
+      <div class="cta-actions">
+        <a href="tel:+923030292114" class="btn btn-gold">📞 Call 0303 0292114</a>
+        <a href="https://wa.me/923030292114?text=Assalam-o-Alaikum!%20I%20want%20to%20know%20more%20about%20Property%20Booking." target="_blank" rel="noopener" class="btn btn-light">💬 WhatsApp us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="images/logo.svg" alt="Property Booking logo">
+          <span class="brand-name" style="color:#fff">Property Booking<small>Pakistan</small></span>
+        </a>
+        <p>Houses, construction & highrise projects — delivered with transparency from booking to possession.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1012 15.2 3.2 3.2 0 0012 8.8zm0-2.1a5.3 5.3 0 110 10.6 5.3 5.3 0 010-10.6zm6.8-.3a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0zM12 4.2c-2.5 0-2.8 0-3.8.1-1 .1-1.7.2-2.3.5-.6.2-1.1.6-1.6 1.1-.5.5-.9 1-1.1 1.6-.3.6-.4 1.3-.5 2.3-.1 1-.1 1.3-.1 3.8s0 2.8.1 3.8c.1 1 .2 1.7.5 2.3.2.6.6 1.1 1.1 1.6.5.5 1 .9 1.6 1.1.6.3 1.3.4 2.3.5 1 .1 1.3.1 3.8.1s2.8 0 3.8-.1c1-.1 1.7-.2 2.3-.5.6-.2 1.1-.6 1.6-1.1.5-.5.9-1 1.1-1.6.3-.6.4-1.3.5-2.3.1-1 .1-1.3.1-3.8s0-2.8-.1-3.8c-.1-1-.2-1.7-.5-2.3-.2-.6-.6-1.1-1.1-1.6-.5-.5-1-.9-1.6-1.1-.6-.3-1.3-.4-2.3-.5-1-.1-1.3-.1-3.8-.1z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.8 2.8 0 00-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 00-2 2A29 29 0 002 12a29 29 0 00.4 4.8 2.8 2.8 0 002 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 002-2A29 29 0 0022 12a29 29 0 00-.4-4.8zM10 15.2V8.8L15.5 12 10 15.2z"/></svg></a>
+          <a href="https://wa.me/923030292114" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.7 1.2 1.6 2 2.8 2.6.3.2.5.1.7-.1l.8-.9c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3 0 .2 0 .7-.2 1.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="houses.html">Houses for sale</a></li>
+          <li><a href="construction.html">Construction services</a></li>
+          <li><a href="highrise.html">Highrise projects</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular sizes</h4>
+        <ul>
+          <li><a href="houses.html?size=5%20Marla">5 Marla houses</a></li>
+          <li><a href="houses.html?size=10%20Marla">10 Marla houses</a></li>
+          <li><a href="houses.html?size=1%20Kanal">1 Kanal houses</a></li>
+          <li><a href="construction.html">Construction quotes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="footer-contact">
+          <li>📞 <a href="tel:+923030292114">0303 0292114</a></li>
+          <li>💬 <a href="https://wa.me/923030292114" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>✉️ <a href="mailto:info@propertybooking.pk">info@propertybooking.pk</a></li>
+          <li>🕘 Mon–Sat, 9am – 8pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Property Booking. All rights reserved.</span>
+      <span>Sample listings shown — call for live inventory.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923030292114?text=Assalam-o-Alaikum!%20I%20have%20a%20question%20about%20Property%20Booking." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.7 1.2 1.6 2 2.8 2.6.3.2.5.1.7-.1l.8-.9c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3 0 .2 0 .7-.2 1.5z"/></svg>
+</a>
+<div class="mobile-callbar">
+  <a class="call" href="tel:+923030292114">📞 Call now</a>
+  <a class="wa" href="https://wa.me/923030292114" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // render featured houses (first 3), areas, testimonials from data.js
+  (function () {
+    const fg = document.getElementById("featured-grid");
+    const feat = LISTINGS.slice(0, 3).map((l, i) => `
+      <article class="card listing-card reveal d${i + 1}">
+        <div class="img-wrap">
+          <span class="ribbon">${l.tag}</span><span class="verified">Verified</span>
+          <img src="${l.img}" alt="${l.title}, ${l.society}" loading="lazy">
+        </div>
+        <div class="listing-body">
+          <span class="size-badge">${l.size}</span>
+          <div class="price">${pkr(l.price)}</div>
+          <h3>${l.title}</h3>
+          <div class="society">📍 ${l.society}</div>
+          <div class="listing-actions">
+            <a class="btn btn-teal btn-sm" href="houses.html">Details</a>
+            <a class="btn btn-gold btn-sm" href="contact.html?interest=houses&property=${encodeURIComponent(l.title + ", " + l.society)}">Enquire</a>
+          </div>
+        </div>
+      </article>`).join("");
+    fg.innerHTML = feat;
+
+    document.getElementById("areas-grid").innerHTML = AREAS.map((a, i) => `
+      <a href="houses.html" class="area-card reveal d${(i % 4) + 1}">
+        <img src="${a.img}" alt="${a.name}" loading="lazy">
+        <div class="area-info"><h3>${a.name}</h3><p>${a.blurb}</p></div>
+      </a>`).join("");
+
+    document.getElementById("testi-grid").innerHTML = TESTIMONIALS.map((t, i) => {
+      const initials = t.name.split(" ").map((w) => w[0]).join("");
+      return `
+      <div class="testi-card reveal d${i + 1}">
+        <div class="stars">★★★★★</div>
+        <p>"${t.text}"</p>
+        <div class="testi-who"><span class="avatar">${initials}</span><span><b>${t.name}</b><span>${t.detail}</span></span></div>
+      </div>`;
+    }).join("");
+
+    // cards were added after main.js ran — observe them for reveal animations
+    if (window.observeReveals) window.observeReveals(document);
+  })();
+</script>
+</body>
+</html>
